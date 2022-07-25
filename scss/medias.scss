@@ -1,0 +1,18 @@
+/*
+    Media queries for different screens
+*/
+
+@mixin media($breakpoint) {
+	@each $breakpoints, $size in $media {
+		@if $breakpoint==$breakpoints and $breakpoint== "small" {
+			@media (max-width: $size) {
+				@content;
+			}
+		}
+		@if $breakpoint==$breakpoints and $breakpoint!= "small" {
+			@media (min-width: $size) {
+				@content;
+			}
+		}
+	}
+}

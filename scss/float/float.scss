@@ -1,0 +1,71 @@
+/*
+    Floats
+*/
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.fn {
+	float: none;
+}
+
+@include media(small) {
+	.fl\@s {
+		float: left;
+	}
+
+	.fr\@s {
+		float: right;
+	}
+
+	.fn\@s {
+		float: none;
+	}
+}
+
+@include media(middle) {
+	.fl\@m {
+		float: left;
+	}
+
+	.fr\@m {
+		float: right;
+	}
+
+	.fn\@m {
+		float: none;
+	}
+}
+
+@include media(large) {
+	.fl\@l {
+		float: left;
+	}
+
+	.fr\@l {
+		float: right;
+	}
+
+	.fn\@l {
+		float: none;
+	}
+}
+
+@include media(extraLarge) {
+	.fl\@xl {
+		float: left;
+	}
+
+	.fr\@xl {
+		float: right;
+	}
+
+	.fn\@xl {
+		float: none;
+	}
+}

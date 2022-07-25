@@ -1,0 +1,88 @@
+[class*="txt"] {
+	[class*="\@l"] {
+		text-align: left;
+	}
+
+	[class*="\@r"] {
+		text-align: right;
+	}
+
+	[class*="\@c"] {
+		text-align: center;
+	}
+
+	[class*="\@tn"] {
+		text-transform: none;
+	}
+
+	[class*="\@aj"] {
+		text-align: justify;
+	}
+
+	[class*="\@e"] {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	[class*="\@tu"] {
+		text-transform: uppercase;
+	}
+
+	[class*="\@tl"] {
+		text-transform: lowercase;
+	}
+
+	[class*="\@du"] {
+		text-decoration: underline;
+	}
+
+	[class*="\@du"] {
+		text-decoration: line-through;
+	}
+
+	[class*="\@tc"] {
+		text-transform: capitalize;
+	}
+
+	[class*="\@wn"] {
+		white-space: nowrap;
+	}
+
+	[class*="\@wb"] {
+		word-wrap: break-word;
+		-webkit-hyphens: auto;
+		-ms-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
+	}
+}
+
+@mixin textSizes($size) {
+	@for $i from 1 through $columns {
+		.c#{$i}#{$size} {
+			-webkit-column-count: $i;
+			-moz-column-count: $i;
+			column-count: $i;
+		}
+	}
+}
+
+@include textSizes("");
+
+/* text columns */
+@include media(small) {
+	@include textSizes(\@s);
+}
+
+@include media(middle) {
+	@include textSizes(\@m);
+}
+
+@include media(large) {
+	@include textSizes(\@m);
+}
+
+@include media(extraLarge) {
+	@include textSizes(\@xl);
+}

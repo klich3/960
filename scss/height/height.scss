@@ -1,0 +1,14 @@
+/*
+    HEIGHT CONTROL
+*/
+
+.ha {
+	height: auto;
+}
+
+/* .h10 = height:10% */
+@each $value, $percent in $percentages {
+	.h#{$value} {
+		height: $percent;
+	}
+}

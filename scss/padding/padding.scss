@@ -1,0 +1,180 @@
+/*
+    PADDING
+*/
+
+.ptn {
+	padding-top: 0;
+}
+
+.pbn {
+	padding-bottom: 0;
+}
+
+.pln {
+	padding-right: 0;
+}
+
+.prn {
+	padding-left: 0;
+}
+
+.pn {
+	padding: 0;
+}
+
+@media (max-width: 768px) {
+	.ptn\@s {
+		padding-top: 0;
+	}
+
+	.pbn\@s {
+		padding-bottom: 0;
+	}
+
+	.pln\@s {
+		padding-right: 0;
+	}
+
+	.prn\@s {
+		padding-left: 0;
+	}
+
+	.pn\@s {
+		padding: 0;
+	}
+}
+
+@media (min-width: 769px) {
+	.ptn\@m {
+		padding-top: 0;
+	}
+
+	.pbn\@m {
+		padding-bottom: 0;
+	}
+
+	.pln\@m {
+		padding-right: 0;
+	}
+
+	.prn\@m {
+		padding-left: 0;
+	}
+
+	.pn\@m {
+		padding: 0;
+	}
+}
+
+@media (min-width: 1220px) {
+	.ptn\@l {
+		padding-top: 0;
+	}
+
+	.pbn\@l {
+		padding-bottom: 0;
+	}
+
+	.pln\@l {
+		padding-right: 0;
+	}
+
+	.prn\@l {
+		padding-left: 0;
+	}
+
+	.pn\@sl {
+		padding: 0;
+	}
+}
+
+@media (min-width: 1600px) {
+	.ptn\@xl {
+		padding-top: 0;
+	}
+
+	.pbn\@xl {
+		padding-bottom: 0;
+	}
+
+	.pln\@xl {
+		padding-right: 0;
+	}
+
+	.prn\@xl {
+		padding-left: 0;
+	}
+
+	.pn\@xl {
+		padding: 0;
+	}
+}
+
+@mixin padding($size) {
+	@each $direction, $short in $shortDir {
+		@for $i from 1 through $gridSections {
+			.p#{$short}#{$i}#{$size} {
+				padding-#{$direction}: #{$i}#{$percentChar};
+			}
+		}
+	}
+}
+
+/*------*/
+
+@include padding("");
+
+/*------*/
+
+/* text columns */
+@include media(small) {
+	@include padding(\@s);
+}
+
+@include media(middle) {
+	@include padding(\@m);
+}
+
+@include media(large) {
+	@include padding(\@l);
+}
+
+@include media(extraLarge) {
+	@include padding(\@xl);
+}
+
+/*
+    Two sided padding
+*/
+
+@mixin cpPadding($size) {
+	@for $i from 1 through $gridSections {
+		.cp#{$i}#{$size} {
+			padding-left: #{$i}#{$percentChar};
+			padding-right: #{$i}#{$percentChar};
+		}
+	}
+}
+
+/*------*/
+
+@include cpPadding("");
+
+/*------*/
+
+/* text columns */
+@include media(small) {
+	@include cpPadding(\@s);
+}
+
+@include media(middle) {
+	@include cpPadding(\@m);
+}
+
+@include media(large) {
+	@include cpPadding(\@l);
+}
+
+@include media(extraLarge) {
+	@include cpPadding(\@xl);
+}

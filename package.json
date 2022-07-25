@@ -1,0 +1,60 @@
+{
+	"name": "960.css",
+	"version": "1.0.0",
+	"description": "960 SCSS Layout most used and shortests css classes.",
+	"main": "960.scss",
+	"style": "css/960.css",
+	"files": [
+		"LICENSE",
+		"960.scss",
+		"scss",
+		"css/960.css"
+	],
+	"engines": {
+		"node": ">=16.0.0",
+		"npm": "~8.13.2"
+	},
+	"keywords": [
+		"960",
+		"css",
+		"gird",
+		"layout",
+		"960.css",
+		"scss",
+		"module",
+		"npm"
+	],
+	"author": "Anthony Sychev <hello@dm211.com> (https://dm211.com)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/klich3/960/issues"
+	},
+	"homepage": "https://github.com/klich3/960#readme",
+	"repository": "klich3/960.git",
+	"scripts": {
+		"prepublish": "npm run lint && npm test",
+		"test": "node test/index.js | tap-spec",
+		"lint": "semistandard && npm run lint:css",
+		"lint-fix": "semistandard --fix",
+		"build:css": "node-sass 960.scss css/960.css --importer node_modules/node-sass-import --output-style=compressed",
+		"lint:css": "sass-lint 'scss/**/*.scss' -v",
+		"scss-compile": "npm run build:css",
+		"compile:sass": "npm run build:css",
+		"watch": "npm run scss-compile"
+	},
+	"devDependencies": {
+		"node-sass": "^7.0.1",
+		"node-sass-import": "^2.0.1",
+		"sass-lint": "^1.13.1",
+		"semistandard": "^16.0.1",
+		"tap-spec": "^5.0.0",
+		"tape": "^5.5.3"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://www.buymeacoffee.com/twooneone"
+	},
+	"directories": {
+		"test": "test"
+	}
+}

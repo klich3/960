@@ -1,0 +1,372 @@
+*,
+*::before,
+*::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+:not(pre) > code,
+:not(pre) > kbd,
+:not(pre) > samp {
+	font-size: 0.875rem;
+	font-family: Consolas, monaco, monospace;
+	color: #f0506e;
+	white-space: nowrap;
+	padding: 2px 6px;
+	background: #f8f8f8;
+}
+
+audio,
+/*canvas,*/
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+::-moz-selection {
+	background: #39f;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #39f;
+	color: #fff;
+	text-shadow: none;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+.r,
+.rel {
+	position: relative;
+}
+
+q {
+	font-style: italic;
+}
+
+small {
+	font-size: 80%;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+audio,
+/*canvas,*/
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+address,
+fieldset,
+figure {
+	margin: 0 0 15px;
+}
+
+* + p,
+* + ul,
+* + ol,
+* + dl,
+* + blockquote,
+* + pre,
+* + address,
+* + fieldset,
+* + figure {
+	margin-top: 15px;
+}
+
+iframe {
+	border: 0;
+}
+
+av a,
+nav a:visited,
+nav a:active,
+a,
+a:visited,
+a:active {
+	outline: 0;
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+	margin: 0 0 20px;
+	border: 0;
+	border-top: 1px solid #e5e5e5;
+}
+
+* + hr {
+	margin-top: 20px;
+}
+
+address {
+	font-style: normal;
+}
+
+blockquote {
+	margin: 0 0 20px;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	font-style: italic;
+	color: #333;
+}
+
+* + blockquote {
+	margin-top: 20px;
+}
+
+blockquote p:last-of-type {
+	margin-bottom: 0;
+}
+
+blockquote footer {
+	margin-top: 10px;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	color: #666;
+}
+
+blockquote footer::before {
+	content: "— ";
+}
+
+pre {
+	font: 0.875rem/1.5 Consolas, monaco, monospace;
+	color: #666;
+	-moz-tab-size: 4;
+	tab-size: 4;
+	overflow: auto;
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	background: #fff;
+}
+
+pre code {
+	font-family: Consolas, monaco, monospace;
+}
+
+::-moz-selection {
+	background: #39f;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #39f;
+	color: #fff;
+	text-shadow: none;
+}
+
+.no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* clearfix fix */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.vh,
+.fh {
+	height: 100vh;
+}
+
+.vw,
+.fw {
+	width: 100vw;
+}
+
+.vh-min {
+	min-height: 100vh;
+}
+
+.vh-max {
+	max-height: 100vh;
+}
+
+@media (max-width: 768px) {
+	.vh-min\@s {
+		min-height: 100vh;
+	}
+
+	.vh-max\@s {
+		max-height: 100vh;
+	}
+}
+
+.vh-2 {
+	height: 200vh;
+}
+
+.vh-3 {
+	height: 300vh;
+}
+
+.vh-4 {
+	height: 40vh;
+}
+
+@media (max-width: 768px) {
+	.vh-n\@s {
+		height: auto;
+	}
+
+	.vh-1\@s {
+		height: 100vh;
+	}
+
+	.vh-2\@s {
+		height: 200vh;
+	}
+
+	.vh-3\@s {
+		height: 300vh;
+	}
+
+	.vh-4\@s {
+		height: 40vh;
+	}
+}
+
+/* 
+	Color Difference
+*/
+
+.color-invert,
+.cl-df {
+	mix-blend-mode: difference;
+	filter: invert(1);
+}
+
+/* 
+	hide small and large 
+*/
+
+.h {
+	display: none;
+	visibility: 0;
+}
+
+.hs {
+	display: initial;
+}
+
+.hl {
+	display: none;
+}
+
+.s {
+	display: inline-block;
+}
+
+@include media(small) {
+	.hs {
+		display: none;
+	}
+
+	.hl {
+		display: initial;
+	}
+
+	.ss {
+		display: inherit;
+	}
+}
+
+@include media(middle) {
+	.hm {
+		display: none;
+	}
+
+	.sm {
+		display: inherit;
+	}
+}
+
+@include media(large) {
+	.sl {
+		display: inherit;
+	}
+}
+
+@include media(extraLarge) {
+	.hxl {
+		display: none;
+	}
+
+	.sxl {
+		display: inherit;
+	}
+}

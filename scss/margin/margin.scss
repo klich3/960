@@ -1,0 +1,152 @@
+/*
+    MARGIN'S
+*/
+
+.mtn {
+	margin-top: 0;
+}
+
+.mbn {
+	margin-bottom: 0;
+}
+
+.mln {
+	margin-left: 0;
+}
+
+.mrn {
+	margin-right: 0;
+}
+
+.mn {
+	margin: 0;
+}
+
+.mta {
+	margin-top: auto !important;
+}
+
+.mba {
+	margin-bottom: auto !important;
+}
+
+@media (max-width: 768px) {
+	.mtn\@s {
+		margin-top: 0;
+	}
+
+	.mbn\@s {
+		margin-bottom: 0;
+	}
+
+	.mln\@s {
+		margin-left: 0;
+	}
+
+	.mrn\@s {
+		margin-right: 0 !important;
+	}
+
+	.mn\@s {
+		margin: 0 !important;
+	}
+}
+
+@media (min-width: 769px) {
+	.mtn\@m {
+		margin-top: 0;
+	}
+
+	.mbn\@m {
+		margin-bottom: 0;
+	}
+
+	.mln\@m {
+		margin-left: 0;
+	}
+
+	.mrn\@m {
+		margin-right: 0;
+	}
+
+	.mn\@m {
+		margin: 0;
+	}
+}
+
+@media (min-width: 1220px) {
+	.mtn\@l {
+		margin-top: 0;
+	}
+
+	.mbn\@l {
+		margin-bottom: 0;
+	}
+
+	.mln\@l {
+		margin-left: 0;
+	}
+
+	.mrn\@l {
+		margin-right: 0;
+	}
+
+	.mn\@l {
+		margin: 0;
+	}
+}
+
+@media (min-width: 1600px) {
+	.mtn\@xl {
+		margin-top: 0;
+	}
+
+	.mbn\@xl {
+		margin-bottom: 0;
+	}
+
+	.mln\@xl {
+		margin-left: 0;
+	}
+
+	.mrn\@xl {
+		margin-right: 0;
+	}
+
+	.mn\@xl {
+		margin: 0;
+	}
+}
+
+@mixin margin($size) {
+	@each $direction, $short in $shortDir {
+		@for $i from 1 through $gridSections {
+			.m#{$short}#{$i}#{$size} {
+				margin-#{$direction}: #{$i}#{$percentChar};
+			}
+		}
+	}
+}
+
+/*------*/
+
+@include margin("");
+
+/*------*/
+
+/* text columns */
+@include media(small) {
+	@include margin(\@s);
+}
+
+@include media(middle) {
+	@include margin(\@m);
+}
+
+@include media(large) {
+	@include margin(\@l);
+}
+
+@include media(extraLarge) {
+	@include margin(\@xl);
+}

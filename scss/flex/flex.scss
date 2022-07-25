@@ -1,0 +1,188 @@
+/*
+    FLEX
+    Guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+*/
+
+.flx {
+	display: flex;
+
+	@mixin flex($size) {
+		&.\@ccc#{$size} {
+			flex-direction: column; /* make main axis vertical */
+			justify-content: center; /* center items vertically, in this case */
+			align-items: center;
+		}
+
+		&.\@fdr#{$size} {
+			flex-direction: row;
+		}
+
+		&.\@fdrr#{$size},
+		&.\@fdrv#{$size} {
+			flex-direction: row-reverse;
+		}
+
+		&.\@fdc#{$size} {
+			flex-direction: column;
+		}
+		&.\@dcr#{$size} {
+			flex-direction: column-reverse;
+		}
+		&.\@fwn#{$size} {
+			flex-wrap: nowrap;
+		}
+		&.\@fww#{$size} {
+			flex-wrap: wrap;
+		}
+		&.\@fwwr#{$size} {
+			flex-wrap: wrap-reverse;
+		}
+		&.\@jcfs#{$size} {
+			justify-content: flex-start;
+		}
+		&.\@jcfe#{$size} {
+			justify-content: flex-end;
+		}
+		&.\@jcc#{$size} {
+			justify-content: center;
+		}
+		&.\@jcsb#{$size} {
+			justify-content: space-between;
+		}
+		&.\@jcsa#{$size} {
+			justify-content: space-around;
+		}
+		&.\@jcse#{$size} {
+			justify-content: space-evenly;
+		}
+		&.\@aifs#{$size} {
+			align-items: flex-start;
+		}
+		&.\@aife#{$size} {
+			align-items: flex-end;
+		}
+		&.\@aic#{$size} {
+			align-items: center;
+		}
+		&.\@aib#{$size} {
+			align-items: baseline;
+		}
+		&.\@ais#{$size} {
+			align-items: stretch;
+		}
+		&.\@acfs#{$size} {
+			align-content: flex-start;
+		}
+		&.\@acfe#{$size} {
+			align-content: flex-end;
+		}
+		&.\@acc#{$size} {
+			align-content: center;
+		}
+		&.\@acsb#{$size} {
+			align-content: space-between;
+		}
+		&.\@acsa#{$size} {
+			align-content: space-around;
+		}
+		&.\@acs#{$size} {
+			align-content: stretch;
+		}
+
+		> .\@asa#{$size} {
+			align-self: auto;
+		}
+
+		> .\@asfs#{$size} {
+			align-self: flex-start;
+		}
+
+		> .\@asfe#{$size} {
+			align-self: flex-end;
+		}
+
+		> .\@asc#{$size} {
+			align-self: center;
+		}
+
+		> .\@asb#{$size} {
+			align-self: baseline;
+		}
+
+		> .\@ass#{$size} {
+			align-self: stretch;
+		}
+	}
+
+	@mixin flexOrder($size) {
+		@for $i from 1 through $gridSections {
+			> .or#{$i}#{$size} {
+				order: $i;
+			}
+		}
+	}
+
+	@mixin flexGrow($size) {
+		@for $i from 1 through $gridSections {
+			> .fg#{$i}#{$size} {
+				flex-grow: $i;
+			}
+		}
+	}
+
+	@mixin flexShrink($size) {
+		@for $i from 1 through $gridSections {
+			> .fs#{$i}#{$size} {
+				flex-shrink: $i;
+			}
+		}
+	}
+
+	@mixin flexBasis($size) {
+		@each $value, $percent in $percentages {
+			> .fb#{$value}#{$size} {
+				flex-basis: $percent;
+			}
+		}
+	}
+
+	/* --------- */
+
+	@include flex("");
+	@include flexOrder("");
+	@include flexGrow("");
+	@include flexShrink("");
+	@include flexBasis("");
+
+	@include media(small) {
+		@include flex("-s");
+		@include flexOrder("-s");
+		@include flexGrow("-s");
+		@include flexShrink("-s");
+		@include flexBasis("-s");
+	}
+
+	@include media(middle) {
+		@include flex("-m");
+		@include flexOrder("-m");
+		@include flexGrow("-m");
+		@include flexShrink("-m");
+		@include flexBasis("-m");
+	}
+
+	@include media(large) {
+		@include flex("-l");
+		@include flexOrder("-l");
+		@include flexGrow("-l");
+		@include flexShrink("-l");
+		@include flexBasis("-l");
+	}
+
+	@include media(extraLarge) {
+		@include flex("-xl");
+		@include flexOrder("-xl");
+		@include flexGrow("-xl");
+		@include flexShrink("-xl");
+		@include flexBasis("-xl");
+	}
+}
