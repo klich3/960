@@ -3,89 +3,89 @@
     Guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
 */
 
-.flx {
+[class*="flx"] {
 	display: flex;
 
 	@mixin flex($size) {
-		&.\@ccc#{$size} {
+		&[class*="\@ccc#{$size}"] {
 			flex-direction: column; /* make main axis vertical */
 			justify-content: center; /* center items vertically, in this case */
 			align-items: center;
 		}
 
-		&.\@fdr#{$size} {
+		&[class*="\@fdr#{$size}"] {
 			flex-direction: row;
 		}
 
-		&.\@fdrr#{$size},
-		&.\@fdrv#{$size} {
+		&[class*="\@fdrr#{$size}"],
+		&[class*="\@fdrv#{$size}"] {
 			flex-direction: row-reverse;
 		}
 
-		&.\@fdc#{$size} {
+		&[class*="\@fdc#{$size}"] {
 			flex-direction: column;
 		}
-		&.\@dcr#{$size} {
+		&[class*="\@dcr#{$size}"] {
 			flex-direction: column-reverse;
 		}
-		&.\@fwn#{$size} {
+		&[class*="\@fwn#{$size}"] {
 			flex-wrap: nowrap;
 		}
-		&.\@fww#{$size} {
+		&[class*="\@fww#{$size}"] {
 			flex-wrap: wrap;
 		}
-		&.\@fwwr#{$size} {
+		&[class*="\@fwwr#{$size}"] {
 			flex-wrap: wrap-reverse;
 		}
-		&.\@jcfs#{$size} {
+		&[class*="\@jcfs#{$size}"] {
 			justify-content: flex-start;
 		}
-		&.\@jcfe#{$size} {
+		&[class*="\@jcfe#{$size}"] {
 			justify-content: flex-end;
 		}
-		&.\@jcc#{$size} {
+		&[class*="\@jcc#{$size}"] {
 			justify-content: center;
 		}
-		&.\@jcsb#{$size} {
+		&[class*="\@jcsb#{$size}"] {
 			justify-content: space-between;
 		}
-		&.\@jcsa#{$size} {
+		&[class*="\@jcsa#{$size}"] {
 			justify-content: space-around;
 		}
-		&.\@jcse#{$size} {
+		&[class*="\@jcse#{$size}"] {
 			justify-content: space-evenly;
 		}
-		&.\@aifs#{$size} {
+		&[class*="\@aifs#{$size}"] {
 			align-items: flex-start;
 		}
-		&.\@aife#{$size} {
+		&[class*="\@aife#{$size}"] {
 			align-items: flex-end;
 		}
-		&.\@aic#{$size} {
+		&[class*="\@aic#{$size}"] {
 			align-items: center;
 		}
-		&.\@aib#{$size} {
+		&[class*="\@aib#{$size}"] {
 			align-items: baseline;
 		}
-		&.\@ais#{$size} {
+		&[class*="\@ais#{$size}"] {
 			align-items: stretch;
 		}
-		&.\@acfs#{$size} {
+		&[class*="\@acfs#{$size}"] {
 			align-content: flex-start;
 		}
-		&.\@acfe#{$size} {
+		&[class*="\@acfe#{$size}"] {
 			align-content: flex-end;
 		}
-		&.\@acc#{$size} {
+		&[class*="\@acc#{$size}"] {
 			align-content: center;
 		}
-		&.\@acsb#{$size} {
+		&[class*="\@acsb#{$size}"] {
 			align-content: space-between;
 		}
-		&.\@acsa#{$size} {
+		&[class*="\@acsa#{$size}"] {
 			align-content: space-around;
 		}
-		&.\@acs#{$size} {
+		&[class*="\@acs#{$size}"] {
 			align-content: stretch;
 		}
 
