@@ -1,6 +1,6 @@
 {
 	"name": "960.css",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "960 SCSS Layout most used and shortests css classes.",
 	"main": "960.scss",
 	"style": "css/960.css",
@@ -11,7 +11,7 @@
 		"css/960.css"
 	],
 	"engines": {
-		"node": ">=16.0.0",
+		"node": "~16.0.0",
 		"npm": "~8.13.2"
 	},
 	"keywords": [

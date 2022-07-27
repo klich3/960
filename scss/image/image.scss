@@ -3,27 +3,27 @@
 */
 
 [class*="img"] {
-	[class*="\@cn"] {
+	&[class*="\@cn"] {
 		object-fit: contain;
 	}
 
-	[class*="\@co"] {
+	&[class*="\@co"] {
 		object-fit: cover;
 	}
 
-	[class*="\@fl"] {
+	&[class*="\@fl"] {
 		object-fit: fill;
 	}
 
-	[class*="\@sd"] {
+	&[class*="\@sd"] {
 		object-fit: scale-down;
 	}
 
-	[class*="\@in"] {
+	&[class*="\@in"] {
 		object-fit: inherit;
 	}
 
-	[class*="\@n"] {
+	&[class*="\@n"] {
 		object-fit: none;
 	}
 }
