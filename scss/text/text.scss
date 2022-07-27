@@ -1,55 +1,55 @@
 [class*="txt"] {
-	[class*="\@l"] {
+	&[class*="\@l"] {
 		text-align: left;
 	}
 
-	[class*="\@r"] {
+	&[class*="\@r"] {
 		text-align: right;
 	}
 
-	[class*="\@c"] {
+	&[class*="\@c"] {
 		text-align: center;
 	}
 
-	[class*="\@tn"] {
+	&[class*="\@tn"] {
 		text-transform: none;
 	}
 
-	[class*="\@aj"] {
+	&[class*="\@aj"] {
 		text-align: justify;
 	}
 
-	[class*="\@e"] {
+	&[class*="\@e"] {
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
 
-	[class*="\@tu"] {
+	&[class*="\@tu"] {
 		text-transform: uppercase;
 	}
 
-	[class*="\@tl"] {
+	&[class*="\@tl"] {
 		text-transform: lowercase;
 	}
 
-	[class*="\@du"] {
+	&[class*="\@du"] {
 		text-decoration: underline;
 	}
 
-	[class*="\@du"] {
+	&[class*="\@du"] {
 		text-decoration: line-through;
 	}
 
-	[class*="\@tc"] {
+	&[class*="\@tc"] {
 		text-transform: capitalize;
 	}
 
-	[class*="\@wn"] {
+	&[class*="\@wn"] {
 		white-space: nowrap;
 	}
 
-	[class*="\@wb"] {
+	&[class*="\@wb"] {
 		word-wrap: break-word;
 		-webkit-hyphens: auto;
 		-ms-hyphens: auto;
