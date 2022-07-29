@@ -4,7 +4,7 @@ Css base mos used methods in one css file.
 
 ## Install
 
-Simply run `npm i 960 --save-dev` or directly from git `npm i https://github.com/klich3/960`
+Simply run `npm i 960.css --save-dev` or directly from git `npm i https://github.com/klich3/960`
 
 Need last version, no problem run this command for this: `npm i 960.css@latest`
 
