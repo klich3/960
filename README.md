@@ -2,6 +2,10 @@
 
 Css base mos used methods in one css file.
 
+## CSS Definitions
+
+Logical definition for sizes: `.<Size><Class modifier>`
+
 ## Install
 
 Simply run `npm i 960.css --save-dev` or directly from git `npm i https://github.com/klich3/960`

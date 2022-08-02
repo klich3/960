@@ -7,116 +7,116 @@
 	display: flex;
 
 	@mixin flex($size) {
-		&[class*="\@ccc#{$size}"] {
+		&[class*="\@#{$size}ccc"] {
 			flex-direction: column; /* make main axis vertical */
 			justify-content: center; /* center items vertically, in this case */
 			align-items: center;
 		}
 
-		&[class*="\@fdr#{$size}"] {
+		&[class*="\@#{$size}fdr"] {
 			flex-direction: row;
 		}
 
-		&[class*="\@fdrr#{$size}"],
-		&[class*="\@fdrv#{$size}"] {
+		&[class*="\@#{$size}fdrr"],
+		&[class*="\@#{$size}fdrv"] {
 			flex-direction: row-reverse;
 		}
 
-		&[class*="\@fdc#{$size}"] {
+		&[class*="\@#{$size}fdc"] {
 			flex-direction: column;
 		}
-		&[class*="\@dcr#{$size}"] {
+		&[class*="\@#{$size}dcr"] {
 			flex-direction: column-reverse;
 		}
-		&[class*="\@fwn#{$size}"] {
+		&[class*="\@#{$size}fwn"] {
 			flex-wrap: nowrap;
 		}
-		&[class*="\@fww#{$size}"] {
+		&[class*="\@#{$size}fww"] {
 			flex-wrap: wrap;
 		}
-		&[class*="\@fwwr#{$size}"] {
+		&[class*="\@#{$size}fwwr"] {
 			flex-wrap: wrap-reverse;
 		}
-		&[class*="\@jcfs#{$size}"] {
+		&[class*="\@#{$size}jcfs"] {
 			justify-content: flex-start;
 		}
-		&[class*="\@jcfe#{$size}"] {
+		&[class*="\@#{$size}jcfe"] {
 			justify-content: flex-end;
 		}
-		&[class*="\@jcc#{$size}"] {
+		&[class*="\@#{$size}jcc"] {
 			justify-content: center;
 		}
-		&[class*="\@jcsb#{$size}"] {
+		&[class*="\@#{$size}jcsb"] {
 			justify-content: space-between;
 		}
-		&[class*="\@jcsa#{$size}"] {
+		&[class*="\@#{$size}jcsa"] {
 			justify-content: space-around;
 		}
-		&[class*="\@jcse#{$size}"] {
+		&[class*="\@#{$size}jcse"] {
 			justify-content: space-evenly;
 		}
-		&[class*="\@aifs#{$size}"] {
+		&[class*="\@#{$size}aifs"] {
 			align-items: flex-start;
 		}
-		&[class*="\@aife#{$size}"] {
+		&[class*="\@#{$size}aife"] {
 			align-items: flex-end;
 		}
-		&[class*="\@aic#{$size}"] {
+		&[class*="\@#{$size}aic"] {
 			align-items: center;
 		}
-		&[class*="\@aib#{$size}"] {
+		&[class*="\@#{$size}aib"] {
 			align-items: baseline;
 		}
-		&[class*="\@ais#{$size}"] {
+		&[class*="\@#{$size}ais"] {
 			align-items: stretch;
 		}
-		&[class*="\@acfs#{$size}"] {
+		&[class*="\@#{$size}acfs"] {
 			align-content: flex-start;
 		}
-		&[class*="\@acfe#{$size}"] {
+		&[class*="\@#{$size}acfe"] {
 			align-content: flex-end;
 		}
-		&[class*="\@acc#{$size}"] {
+		&[class*="\@#{$size}cc"] {
 			align-content: center;
 		}
-		&[class*="\@acsb#{$size}"] {
+		&[class*="\@#{$size}acsb"] {
 			align-content: space-between;
 		}
-		&[class*="\@acsa#{$size}"] {
+		&[class*="\@#{$size}acsa"] {
 			align-content: space-around;
 		}
-		&[class*="\@acs#{$size}"] {
+		&[class*="\@#{$size}acs"] {
 			align-content: stretch;
 		}
 
-		> .\@asa#{$size} {
+		> .\@#{$size}asa {
 			align-self: auto;
 		}
 
-		> .\@asfs#{$size} {
+		> .\@#{$size}asfs {
 			align-self: flex-start;
 		}
 
-		> .\@asfe#{$size} {
+		> .\@#{$size}asfe {
 			align-self: flex-end;
 		}
 
-		> .\@asc#{$size} {
+		> .\@#{$size}asc {
 			align-self: center;
 		}
 
-		> .\@asb#{$size} {
+		> .\@#{$size}asb {
 			align-self: baseline;
 		}
 
-		> .\@ass#{$size} {
+		> .\@#{$size}ass {
 			align-self: stretch;
 		}
 	}
 
 	@mixin flexOrder($size) {
 		@for $i from 1 through $gridSections {
-			> .or#{$i}#{$size} {
+			> .#{$size}or#{$i} {
 				order: $i;
 			}
 		}
@@ -124,7 +124,7 @@
 
 	@mixin flexGrow($size) {
 		@for $i from 1 through $gridSections {
-			> .fg#{$i}#{$size} {
+			> .#{$size}fg#{$i} {
 				flex-grow: $i;
 			}
 		}
@@ -132,7 +132,7 @@
 
 	@mixin flexShrink($size) {
 		@for $i from 1 through $gridSections {
-			> .fs#{$i}#{$size} {
+			> .#{$size}fs#{$i} {
 				flex-shrink: $i;
 			}
 		}
@@ -140,7 +140,7 @@
 
 	@mixin flexBasis($size) {
 		@each $value, $percent in $percentages {
-			> .fb#{$value}#{$size} {
+			> .#{$size}fb#{$value} {
 				flex-basis: $percent;
 			}
 		}
@@ -155,34 +155,34 @@
 	@include flexBasis("");
 
 	@include media(small) {
-		@include flex("-s");
-		@include flexOrder("-s");
-		@include flexGrow("-s");
-		@include flexShrink("-s");
-		@include flexBasis("-s");
+		@include flex("s");
+		@include flexOrder("s");
+		@include flexGrow("s");
+		@include flexShrink("s");
+		@include flexBasis("s");
 	}
 
 	@include media(middle) {
-		@include flex("-m");
-		@include flexOrder("-m");
-		@include flexGrow("-m");
-		@include flexShrink("-m");
-		@include flexBasis("-m");
+		@include flex("m");
+		@include flexOrder("m");
+		@include flexGrow("m");
+		@include flexShrink("m");
+		@include flexBasis("m");
 	}
 
 	@include media(large) {
-		@include flex("-l");
-		@include flexOrder("-l");
-		@include flexGrow("-l");
-		@include flexShrink("-l");
-		@include flexBasis("-l");
+		@include flex("l");
+		@include flexOrder("l");
+		@include flexGrow("l");
+		@include flexShrink("l");
+		@include flexBasis("l");
 	}
 
 	@include media(extraLarge) {
-		@include flex("-xl");
-		@include flexOrder("-xl");
-		@include flexGrow("-xl");
-		@include flexShrink("-xl");
-		@include flexBasis("-xl");
+		@include flex("xl");
+		@include flexOrder("xl");
+		@include flexGrow("xl");
+		@include flexShrink("xl");
+		@include flexBasis("xl");
 	}
 }
