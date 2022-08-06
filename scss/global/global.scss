@@ -248,54 +248,54 @@ progress {
 	width: 100vw;
 }
 
-.vh-min {
+.vhmin {
 	min-height: 100vh;
 }
 
-.vh-max {
+.vhmax {
 	max-height: 100vh;
 }
 
 @media (max-width: 768px) {
-	.vh-min\@s {
+	.vhmin\@s {
 		min-height: 100vh;
 	}
 
-	.vh-max\@s {
+	.vhmax\@s {
 		max-height: 100vh;
 	}
 }
 
-.vh-2 {
+.vh2 {
 	height: 200vh;
 }
 
-.vh-3 {
+.vh3 {
 	height: 300vh;
 }
 
-.vh-4 {
+.vh4 {
 	height: 40vh;
 }
 
 @media (max-width: 768px) {
-	.vh-n\@s {
+	.vhn\@s {
 		height: auto;
 	}
 
-	.vh-1\@s {
+	.vh1\@s {
 		height: 100vh;
 	}
 
-	.vh-2\@s {
+	.vh2\@s {
 		height: 200vh;
 	}
 
-	.vh-3\@s {
+	.vh3\@s {
 		height: 300vh;
 	}
 
-	.vh-4\@s {
+	.vh4\@s {
 		height: 40vh;
 	}
 }
@@ -305,7 +305,7 @@ progress {
 */
 
 .color-invert,
-.cl-df {
+.cldf {
 	mix-blend-mode: difference;
 	filter: invert(1);
 }
