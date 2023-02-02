@@ -311,6 +311,40 @@ progress {
 }
 
 /* 
+	overflow 
+*/
+
+.ofh {
+	overflow: hidden;
+}
+
+.ofv  {
+	overflow: visible;
+}
+
+.ofs  {
+	overflow: scroll;
+}
+
+.ofsx  {
+	overflow-x: visible;
+}
+
+.ofsxh  {
+	overflow-x: hidden;
+}
+
+.ofsy  {
+	overflow-y: visible;
+}
+
+.ofsyh  {
+	overflow-y: hidden;
+}
+
+/*TODO add for medi quueries*/
+
+/* 
 	hide small and large 
 */
 

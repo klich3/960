@@ -298,6 +298,12 @@ ul.g + ul.g {
 [class*="wxl"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+[class*="ws"],
+[class*="wm"],
+[class*="wl"],
+[class*="wxl"] {
 	width: 100%;
 	max-width: 100%;
 }
