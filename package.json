@@ -40,7 +40,7 @@
 		"watch": "npm run scss-compile"
 	},
 	"devDependencies": {
-		"node-sass": "^8.0.0",
+		"node-sass": "^9.0.0",
 		"node-sass-import": "^2.0.1",
 		"sass-lint": "^1.13.1",
 		"semistandard": "^16.0.1",
