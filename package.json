@@ -43,7 +43,7 @@
 		"node-sass": "^9.0.0",
 		"node-sass-import": "^2.0.1",
 		"sass-lint": "^1.13.1",
-		"semistandard": "^16.0.1",
+		"semistandard": "^17.0.0",
 		"tap-spec": "^5.0.0",
 		"tape": "^5.5.3"
 	},
