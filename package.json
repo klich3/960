@@ -1,6 +1,6 @@
 {
 	"name": "960.css",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "960 SCSS Layout most used and shortests css classes.",
 	"main": "960.scss",
 	"style": "css/960.css",
