@@ -238,66 +238,9 @@ progress {
 	zoom: 1;
 }
 
-.vh,
-.fh {
-	height: 100vh;
-}
-
 .vw,
 .fw {
 	width: 100vw;
-}
-
-.vhmin {
-	min-height: 100vh;
-}
-
-.vhmax {
-	max-height: 100vh;
-}
-
-@media (max-width: 768px) {
-	.vhmin\@s {
-		min-height: 100vh;
-	}
-
-	.vhmax\@s {
-		max-height: 100vh;
-	}
-}
-
-.vh2 {
-	height: 200vh;
-}
-
-.vh3 {
-	height: 300vh;
-}
-
-.vh4 {
-	height: 40vh;
-}
-
-@media (max-width: 768px) {
-	.vhn\@s {
-		height: auto;
-	}
-
-	.vh1\@s {
-		height: 100vh;
-	}
-
-	.vh2\@s {
-		height: 200vh;
-	}
-
-	.vh3\@s {
-		height: 300vh;
-	}
-
-	.vh4\@s {
-		height: 40vh;
-	}
 }
 
 /* 
@@ -314,31 +257,35 @@ progress {
 	overflow 
 */
 
+.ofa {
+	overflow: auto;
+}
+
 .ofh {
 	overflow: hidden;
 }
 
-.ofv  {
+.ofv {
 	overflow: visible;
 }
 
-.ofs  {
+.ofs {
 	overflow: scroll;
 }
 
-.ofsx  {
+.ofsx {
 	overflow-x: visible;
 }
 
-.ofsxh  {
+.ofsxh {
 	overflow-x: hidden;
 }
 
-.ofsy  {
+.ofsy {
 	overflow-y: visible;
 }
 
-.ofsyh  {
+.ofsyh {
 	overflow-y: hidden;
 }
 

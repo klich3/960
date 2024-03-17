@@ -1,4 +1,11 @@
+
 # 960 Grid CSS Speed classes
+
+[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![downloads per month](https://img.shields.io/github/klich3/960.svg)](https://www.npmjs.org/package/960)
+[![Issues](https://img.shields.io/github/issues/klich3/960.svg)]( https://github.com/klich3/960/issues )
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/klich3/960.svg)](https://GitHub.com/klich3/960/pull/)
+
 
 Css base mos used methods in one css file.
 
@@ -28,7 +35,9 @@ Test:  `npm run prepublish` or `npm run test`
 
 Compile command: `npm run build:css` or `npm run scss-compile`
 
-Publish script: `npm install --global np`
+Publish script: 
+    - `npm install --global np`
+    - `npm publish --access=public ./`
 
 ### DOCS
 

@@ -1,0 +1,29 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 960.css
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - email: anton@sychev.xyz
+    given-names: Anton
+    family-names: Sychev
+    affiliation: too
+repository-code: "https://github.com/klich3/960/"
+abstract: >-
+  NMP module to include shortcuts in your project with Grid
+  960 CSS3
+keywords:
+  - "960"
+  - css
+  - scss
+  - layout
+  - module
+  - npm
+  - grid
+  - html
+license: MIT
+version: 1.0.7

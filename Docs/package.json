@@ -1,0 +1,26 @@
+{
+	"name": "960.css-docs",
+	"version": "1.0.0",
+	"description": "Documentation of 960 grid project",
+	"scripts": {
+		"docs:dev": "vitepress dev",
+		"docs:build": "vitepress build",
+		"docs:preview": "vitepress preview"
+	},
+	"keywords": [
+		"960",
+		"css",
+		"grid"
+	],
+	"author": "Anthony Sychev <hello@dm211.com> (https://dm211.com)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/klich3/960/issues"
+	},
+	"contributors": "https://github.com/klich3/960/graphs/contributors",
+	"homepage": "https://github.com/klich3/960#readme",
+	"repository": "klich3/960.git",
+	"devDependencies": {
+		"vitepress": "^1.0.0-rc.45"
+	}
+}
