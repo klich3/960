@@ -42,3 +42,9 @@ Publish script:
 ### DOCS
 
 * https://sass-lang.com/documentation/at-rules/mixin
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=klich3/960&type=Date)](https://star-history.com/#klich3/960&Date)
