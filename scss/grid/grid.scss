@@ -423,3 +423,53 @@ ul.g + ul.g {
 }
 
 /*------*/
+
+/* PURE GRID */
+
+@mixin gridColsBySize($size, $gridSystemRows: 16) {
+	@for $i from 1 through $gridSystemRows {
+		.#{$size}cl#{$i} {
+			grid-column-end: span $i;
+		}
+	}
+}
+
+@mixin gridStartBySize($size, $gridSystemRows: 16) {
+	@for $i from 1 through $gridSystemRows {
+		.#{$size}st#{$i} {
+			grid-column-start: $i;
+		}
+	}
+}
+
+.grd {
+	display: grid;
+
+	grid-template-columns: repeat(16, 1fr);
+	grid-row-gap: 0;
+	grid-column-gap: 0;
+}
+
+/* generate basic */
+@include gridColsBySize("");
+@include gridStartBySize("");
+
+@include media(small) {
+	@include gridColsBySize("s", 8);
+	@include gridStartBySize("s", 8);
+}
+
+@include media(middle) {
+	@include gridColsBySize("m", 8);
+	@include gridStartBySize("m", 8);
+}
+
+@include media(large) {
+	@include gridColsBySize("l");
+	@include gridStartBySize("l");
+}
+
+@include media(extraLarge) {
+	@include gridColsBySize("xl");
+	@include gridStartBySize("xl");
+}
