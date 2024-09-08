@@ -37,7 +37,8 @@
 		"build:css": "node-sass 960.scss css/960.css --importer node_modules/node-sass-import --output-style=compressed",
 		"scss-compile": "npm run build:css",
 		"compile:sass": "npm run build:css",
-		"watch": "npm run scss-compile"
+		"watch": "npm run scss-compile",
+		"postinstall": "node postinstall.js"
 	},
 	"devDependencies": {
 		"node-sass": "^9.0.0",
@@ -45,7 +46,8 @@
 		"sass-lint": "^1.13.1",
 		"semistandard": "^17.0.0",
 		"tap-spec": "^5.0.0",
-		"tape": "^5.5.3"
+		"tape": "^5.5.3",
+		"sass-embedded": "1.78.0"
 	},
 	"funding": {
 		"type": "individual",
