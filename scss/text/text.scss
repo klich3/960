@@ -1,5 +1,5 @@
-@use "../variables";
-@use "../medias";
+@use "../variables" as *;
+@use "../medias" as *;
 
 [class*="txt"] {
 	&[class*="\@l"] {
@@ -23,9 +23,9 @@
 	}
 
 	&[class*="\@e"] {
-		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	&[class*="\@tu"] {
@@ -53,19 +53,19 @@
 	}
 
 	&[class*="\@wb"] {
-		word-wrap: break-word;
-		-webkit-hyphens: auto;
-		-ms-hyphens: auto;
 		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		-webkit-hyphens: auto;
 		hyphens: auto;
+		word-wrap: break-word;
 	}
 }
 
 @mixin textSizes($size) {
 	@for $i from 1 through $columns {
 		.c#{$i}#{$size} {
-			-webkit-column-count: $i;
 			-moz-column-count: $i;
+			-webkit-column-count: $i;
 			column-count: $i;
 		}
 	}

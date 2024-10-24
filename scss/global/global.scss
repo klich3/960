@@ -1,4 +1,4 @@
-@use "../medias";
+@use "../medias" as *;
 
 *,
 *::before,
@@ -9,8 +9,8 @@
 }
 
 html {
-	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -20,12 +20,12 @@ body {
 :not(pre) > code,
 :not(pre) > kbd,
 :not(pre) > samp {
-	font-size: 0.875rem;
-	font-family: Consolas, monaco, monospace;
-	color: #f0506e;
-	white-space: nowrap;
-	padding: 2px 6px;
 	background: #f8f8f8;
+	color: #f0506e;
+	font-family: Consolas, monaco, monospace;
+	font-size: 0.875rem;
+	padding: 2px 6px;
+	white-space: nowrap;
 }
 
 audio,
@@ -126,12 +126,12 @@ a:active {
 }
 
 hr {
-	box-sizing: content-box;
-	height: 0;
-	overflow: visible;
-	margin: 0 0 20px;
 	border: 0;
 	border-top: 1px solid #e5e5e5;
+	box-sizing: content-box;
+	height: 0;
+	margin: 0 0 20px;
+	overflow: visible;
 }
 
 * + hr {
@@ -143,11 +143,11 @@ address {
 }
 
 blockquote {
-	margin: 0 0 20px;
-	font-size: 1.25rem;
-	line-height: 1.5;
-	font-style: italic;
 	color: #333;
+	font-size: 1.25rem;
+	font-style: italic;
+	line-height: 1.5;
+	margin: 0 0 20px;
 }
 
 * + blockquote {
@@ -159,10 +159,10 @@ blockquote p:last-of-type {
 }
 
 blockquote footer {
-	margin-top: 10px;
+	color: #666;
 	font-size: 0.875rem;
 	line-height: 1.5;
-	color: #666;
+	margin-top: 10px;
 }
 
 blockquote footer::before {
@@ -170,15 +170,15 @@ blockquote footer::before {
 }
 
 pre {
-	font: 0.875rem/1.5 Consolas, monaco, monospace;
-	color: #666;
 	-moz-tab-size: 4;
-	tab-size: 4;
-	overflow: auto;
-	padding: 10px;
+	background: #fff;
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
-	background: #fff;
+	color: #666;
+	font: 0.875rem/1.5 Consolas, monaco, monospace;
+	overflow: auto;
+	padding: 10px;
+	tab-size: 4;
 }
 
 pre code {
@@ -198,18 +198,18 @@ pre code {
 }
 
 .no-select {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
+	-khtml-user-drag: none;
 	-khtml-user-select: none;
+	-moz-user-drag: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
-
-	-webkit-user-drag: none;
-	-khtml-user-drag: none;
-	-moz-user-drag: none;
 	-o-user-drag: none;
+
+	-webkit-touch-callout: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
 	user-drag: none;
+	user-select: none;
 }
 
 progress {
@@ -219,10 +219,10 @@ progress {
 .clear {
 	clear: both;
 	display: block;
+	height: 0;
 	overflow: hidden;
 	visibility: hidden;
 	width: 0;
-	height: 0;
 }
 
 /* clearfix fix */
@@ -251,8 +251,8 @@ progress {
 
 .color-invert,
 .cldf {
-	mix-blend-mode: difference;
 	filter: invert(1);
+	mix-blend-mode: difference;
 }
 
 /* 

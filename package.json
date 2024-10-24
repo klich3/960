@@ -1,6 +1,6 @@
 {
 	"name": "960.css",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "960 SCSS Layout most used and shortests css classes.",
 	"main": "960.scss",
 	"style": "css/960.css",
@@ -29,10 +29,11 @@
 	"homepage": "https://github.com/klich3/960#readme",
 	"repository": "klich3/960.git",
 	"scripts": {
-		"prepublish": "npm run lint && npm test && npm run build:css",
+		"prepublish": "npm run lint && npm run lint:fix && npm test && npm run build:css",
 		"test": "node test/index.js | tap-spec",
 		"lint": "semistandard && npm run lint:css",
 		"lint-fix": "semistandard --fix",
+		"lint:fix": "sass-lint-auto-fix",
 		"lint:css": "sass-lint 'scss/**/*.scss' -v",
 		"build:css": "node-sass 960.scss css/960.css --importer node_modules/node-sass-import --output-style=compressed",
 		"scss-compile": "npm run build:css",
@@ -43,6 +44,7 @@
 		"node-sass": "^9.0.0",
 		"node-sass-import": "^1.0.5",
 		"sass-lint": "^1.13.1",
+		"sass-lint-auto-fix": "^0.21.2",
 		"semistandard": "^17.0.0",
 		"tap-spec": "^2.2.2",
 		"tape": "^5.9.0"

@@ -1,33 +1,33 @@
-@use "../medias";
+@use "../medias" as *;
 
 /*
 	DEBUG
 */
 
 .debug {
-	border: 1px dotted red;
+	border: 1px dotted #f00;
 }
 
 @include media(small) {
 	body.debug {
-		border: 4px solid yellow;
+		border: 4px solid #ff0;
 	}
 }
 
 @include media(middle) {
 	body.debug {
-		border: 4px solid red;
+		border: 4px solid #f00;
 	}
 }
 
 @include media(large) {
 	body.debug {
-		border: 4px solid green;
+		border: 4px solid #008000;
 	}
 }
 
 @include media(extraLarge) {
 	body.debug {
-		border: 4px solid blue;
+		border: 4px solid #00f;
 	}
 }
