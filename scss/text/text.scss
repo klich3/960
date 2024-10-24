@@ -1,3 +1,6 @@
+@use "../variables";
+@use "../medias";
+
 [class*="txt"] {
 	&[class*="\@l"] {
 		text-align: left;
@@ -37,7 +40,7 @@
 		text-decoration: underline;
 	}
 
-	&[class*="\@du"] {
+	&[class*="\@dt"] {
 		text-decoration: line-through;
 	}
 
@@ -68,7 +71,7 @@
 	}
 }
 
-@include textSizes("");
+@include textSizes(""); // Verificar que $columns esté definido
 
 /* text columns */
 @include media(small) {
@@ -80,7 +83,7 @@
 }
 
 @include media(large) {
-	@include textSizes(\@m);
+	@include textSizes(\@l);
 }
 
 @include media(extraLarge) {
