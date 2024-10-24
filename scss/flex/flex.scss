@@ -1,5 +1,5 @@
-@use "../medias";
-@use "../variables";
+@use "../medias" as *;
+@use "../variables" as *;
 
 /*
     FLEX
@@ -11,9 +11,9 @@
 
 	@mixin flex($size) {
 		&[class*="\@#{$size}ccc"] {
+			align-items: center;
 			flex-direction: column; /* make main axis vertical */
 			justify-content: center; /* center items vertically, in this case */
-			align-items: center;
 		}
 
 		&[class*="\@#{$size}fdr"] {
@@ -28,66 +28,87 @@
 		&[class*="\@#{$size}fdc"] {
 			flex-direction: column;
 		}
+
 		&[class*="\@#{$size}dcr"] {
 			flex-direction: column-reverse;
 		}
+
 		&[class*="\@#{$size}fwn"] {
 			flex-wrap: nowrap;
 		}
+
 		&[class*="\@#{$size}fww"] {
 			flex-wrap: wrap;
 		}
+
 		&[class*="\@#{$size}fwwr"] {
 			flex-wrap: wrap-reverse;
 		}
+
 		&[class*="\@#{$size}jcfs"] {
 			justify-content: flex-start;
 		}
+
 		&[class*="\@#{$size}jcfe"] {
 			justify-content: flex-end;
 		}
+
 		&[class*="\@#{$size}jcc"] {
 			justify-content: center;
 		}
+
 		&[class*="\@#{$size}jcsb"] {
 			justify-content: space-between;
 		}
+
 		&[class*="\@#{$size}jcsa"] {
 			justify-content: space-around;
 		}
+
 		&[class*="\@#{$size}jcse"] {
 			justify-content: space-evenly;
 		}
+
 		&[class*="\@#{$size}aifs"] {
 			align-items: flex-start;
 		}
+
 		&[class*="\@#{$size}aife"] {
 			align-items: flex-end;
 		}
+
 		&[class*="\@#{$size}aic"] {
 			align-items: center;
 		}
+
 		&[class*="\@#{$size}aib"] {
 			align-items: baseline;
 		}
+
 		&[class*="\@#{$size}ais"] {
 			align-items: stretch;
 		}
+
 		&[class*="\@#{$size}acfs"] {
 			align-content: flex-start;
 		}
+
 		&[class*="\@#{$size}acfe"] {
 			align-content: flex-end;
 		}
+
 		&[class*="\@#{$size}cc"] {
 			align-content: center;
 		}
+
 		&[class*="\@#{$size}acsb"] {
 			align-content: space-between;
 		}
+
 		&[class*="\@#{$size}acsa"] {
 			align-content: space-around;
 		}
+
 		&[class*="\@#{$size}acs"] {
 			align-content: stretch;
 		}

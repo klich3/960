@@ -30,39 +30,39 @@
 
 svg.e,
 img.e {
-	width: 100%;
 	min-width: 100%;
+	width: 100%;
 }
 
 @media (max-width: 768px) {
 	svg.e\@s,
 	img.e\@s {
-		width: 100%;
 		min-width: 100%;
+		width: 100%;
 	}
 }
 
 @media (min-width: 769px) {
 	svg.e\@m,
 	img.e\@m {
-		width: 100%;
 		min-width: 100%;
+		width: 100%;
 	}
 }
 
 @media (min-width: 1220px) {
 	svg.e\@l,
 	img.e\@l {
-		width: 100%;
 		min-width: 100%;
+		width: 100%;
 	}
 }
 
 @media (min-width: 1600px) {
 	svg.e\@xl,
 	img.e\@xl {
-		width: 100%;
 		min-width: 100%;
+		width: 100%;
 	}
 }
 
@@ -70,11 +70,11 @@ audio,
 /*canvas,*/
 video,
 img {
-	max-width: 100%;
-	height: auto;
-
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
+	height: auto;
+	max-width: 100%;
 }
 
 img {
