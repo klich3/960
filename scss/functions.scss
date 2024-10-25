@@ -1,0 +1,11 @@
+@use "sass:string";
+
+/* FUNCTIONS ---------------------------------------------------------------------- */
+
+@function extract-number($class) {
+	$start: string.index($class, "[") + 1;
+	$end: string.index($class, "]") - 1;
+	@return string.slice($class, $start, $end);
+}
+
+/* -------------------------------------------------------------------------------- */
