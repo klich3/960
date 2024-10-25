@@ -1,5 +1,6 @@
 @use "../medias" as *;
 @use "../variables" as *;
+@use "../functions" as *;
 
 /*
     FLEX
@@ -208,5 +209,19 @@
 		@include flexGrow("xl");
 		@include flexShrink("xl");
 		@include flexBasis("xl");
+	}
+}
+
+@mixin apply-gap($class) {
+	$gap-value: extract-number($class);
+	gap: #{$gap-value}px;
+}
+
+/* add gap */
+.gp {
+	@for $i from 0 through 50 {
+		&\[#{$i}\] {
+			@include apply-gap("gp[#{$i}]");
+		}
 	}
 }
