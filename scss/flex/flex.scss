@@ -219,7 +219,7 @@
 
 /* add gap */
 .gp {
-	@for $i from 0 through 50 {
+	@for $i from 0 through 150 {
 		&\[#{$i}\] {
 			@include apply-gap("gp[#{$i}]");
 		}
