@@ -46,7 +46,7 @@
 		"sass-lint": "^1.13.1",
 		"sass-lint-auto-fix": "^0.21.2",
 		"semistandard": "^17.0.0",
-		"tap-spec": "^2.2.2",
+		"tap-spec": "^5.0.0",
 		"tape": "^5.9.0"
 	},
 	"funding": {
