@@ -42,7 +42,7 @@
 	},
 	"devDependencies": {
 		"node-sass": "^9.0.0",
-		"node-sass-import": "^1.0.5",
+		"node-sass-import": "^2.0.1",
 		"sass-lint": "^1.13.1",
 		"sass-lint-auto-fix": "^0.21.2",
 		"semistandard": "^17.0.0",
